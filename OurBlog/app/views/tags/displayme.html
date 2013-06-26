@@ -1,0 +1,36 @@
+*{ Display a user in one of these modes: 'home' , 'guest' , 'home_full' or 'guest_full'}*
+
+<div class="user_metadata">
+
+		<img alt="" src="&{_user.headprotrait}">
+		&{'total_blogs'}
+		<a href="@{UserAdmin.index(_user.id)}">
+		${_user.blogs.size()} blogs<br>
+		</a>
+		&{'followings'}
+		<a href="@{UserAdmin.listFollows(_user.id,true)}">
+		  ${_user.followings.size()}<br>
+		</a>
+		&{'followers'}
+		<a href="@{UserAdmin.listFollows(_user.id,false)}">
+		  ${_user.followers.size()}<br>
+		</a>
+	#{if _as != 'home' && _as !='home_full' }
+		  <a href="@{UserAdmin.addFollowing(_user.id)}">
+		<span class="follow_text">&{'follow'}</span>(ajax处理)
+		<span class="unfollow_text">&{'unfollow'}</span>
+		</a>
+	#{/if}
+    #{if _as == 'home_full' || _as == 'home'}
+		<div id="edit_info">
+			<a href="#">&{'edit_info'}</a>
+		</div>
+		<div id="new_blog">
+		<a href="@{blank()}">&{'createNewBlog'}</a>
+		</div>
+		<div id="comments_admin">
+		<a href="#">&{'comments_admin'}</a>
+		</div>
+		
+    #{/if}
+</div>

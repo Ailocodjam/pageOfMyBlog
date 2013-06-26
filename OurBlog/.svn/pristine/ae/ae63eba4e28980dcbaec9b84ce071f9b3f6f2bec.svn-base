@@ -1,0 +1,11 @@
+#Thu Apr 11 21:54:44 CST 2013
+eclipse.preferences.version=1
+encoding//app/views/CRUD/layout.html=UTF-8
+encoding//app/views/UserAdmin/index.html=UTF-8
+encoding//app/views/UserAdmin/listFollows.html=UTF-8
+encoding//app/views/UserAdmin/show.html=UTF-8
+encoding//app/views/main.html=UTF-8
+encoding//app/views/tags/display.html=UTF-8
+encoding//app/views/tags/displayme.html=UTF-8
+encoding//crud/views/CRUD/layout.html=UTF-8
+encoding/<project>=UTF-8

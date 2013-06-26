@@ -1,0 +1,28 @@
+#{extends 'userAdmin.html' /}
+#{set title:'Home' /}
+
+#{displayme user:user,as:'home'/}
+
+#{if flash.success}
+    <p class="success">${flash.success}</p>
+#{/if}
+
+
+#{if blogs.size()}
+
+    <div class="older-posts">
+        <h3>Blogs</h3>
+
+        #{list items:blogs, as:'blog'}
+            #{display blog:blog, as:'home' /}
+        #{/list}
+    </div>
+    
+#{/if}
+
+#{else}
+<div class="empty">
+    There is currently nothing to read here.
+</div>
+#{/else}
+ 

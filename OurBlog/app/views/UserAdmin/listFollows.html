@@ -1,0 +1,20 @@
+#{extends 'userAdmin.html' /}
+#{set title:'home' /}
+#{displayme user:user,as:mode /}
+#{if follows.size()}
+
+    <div class="older-posts">
+        <h3>Followings(未筛选已关注和自己)</h3>
+
+        #{list items:follows, as:'follow'}
+        	
+            <a href="@{UserAdmin.index(follow.id)}">${follow.user_name}</a>
+            <span>
+            	<a href="@{UserAdmin.addFollowing(follow.id)}">Follow</a>
+            </span>
+            <br>
+        #{/list}
+    </div>
+
+#{/if}
+

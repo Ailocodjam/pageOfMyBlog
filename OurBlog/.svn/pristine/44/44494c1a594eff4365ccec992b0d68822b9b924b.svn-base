@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Administration</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+#{get 'moreStyles' /}
+<link rel="stylesheet" type="text/css" media="screen"
+	href="@{'/public/stylesheets/main.css'}" />
+<link rel="shortcut icon" type="image/png"
+	href="@{'/public/images/favicon.png'}" />
+<script src="@{'/public/javascripts/jquery-1.6.4.min.js'}"
+	type="text/javascript" charset="${_response_encoding}"></script>
+<script
+	src="@{'/public/javascripts/jquery.tools-1.2.5.toolbox.expose.min.js'}"></script>
+</head>
+<body id="admin">
+
+	<div id="header">
+		<div id="logo">
+			 <span>
+			 #{if user}
+			 <a href="@{UserAdmin.index(user.id)}">
+			 ${user.user_name}'s home
+			 </a>
+			 #{/if}
+			 </span>
+		</div>
+		
+		<ul id="tools">
+			<li>
+				<a href="@{Application.index()}">&{'home'}</a>
+                <span id="regist"><a href="#">&{'regist'}</a></span>
+			</li>
+			<li>
+			 <div id="wel_info">
+                    #{if session.contains('username')}
+	                Hi,
+	                <a href="@{UserAdmin.homeIndex()}">
+                    ${session.get('username')}
+	                </a>
+                    <span id="log_in_out">
+                    <a href="@{Secure.logout()}">&{'log_out'}</a>
+                    </span>
+                    #{/if}
+                </div>
+                <div id="log_in_out">
+                    #{else}
+                    <a href="@{Secure.login()}">&{'log_in'}</a>
+                    #{/else}
+                </div>
+			</li>
+		</ul>
+	</div>
+
+
+	<div id="main">
+		#{doLayout /}
+	</div>
+
+	<p id="footer">
+		©2013 &nbsp;&nbsp; <a href="#">Wahson Leung</a>  
+	</p>
+
+</body>
+</html>

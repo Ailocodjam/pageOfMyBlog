@@ -1,0 +1,82 @@
+*{ Display a blog in one of these modes: 'full','home_full','guess_full','home' ,'guest' ,'shortcut' or 'teaser' }*
+
+<div class="post ${_as == 'teaser' ? 'teaser' : ''}">
+<h2 class="post-title">
+
+    <a href="@{UserAdmin.show(_blog.id)}">
+  		  #{if _blog.type=='nature'}
+   			 <span id="nature_blog">[原]</span>
+   		  #{/if}
+    	  #{elseif _blog.type=='reprint'}
+    	 	 <span id="reprint_blog">[转]</span>
+    	  #{/elseif}
+    	  <span>${_blog.title}</span>
+    </a>
+    
+    #{if _as =='guest_full' || _as == 'guest'}
+    	<span id="reprint_blog">
+    	<a href="@{UserAdmin.reprintBlog(_blog.id)}">&{'reprint_blog'}</a>
+    	</span>
+    #{/if}
+    
+    #{if _as == 'home' || _as == 'home_full'}
+    <span id="modify_blog">
+    <a href="#">&{'modify_blog'}</a>&nbsp;|&nbsp;
+    <a href="@{UserAdmin.deleteBlog(_blog.id)}">&{'delete_blog'}</a>
+    </span>
+    #{/if}
+</h2>
+<div class="post-metadata">
+	#{if _as == 'shortcut'}
+    <span class="post-author"><a href="@{UserAdmin.index(_blog.author.id)}">@${_blog.author.user_name}</a></span> 
+    #{/if}
+    &nbsp;&nbsp;
+    <span class="post-date">&{'release_date'}${_blog.release_date.format('yyyy年MM月dd日　HH:mm')}</span>
+    #{if _as != 'home_full' || _as != 'guest_full'}
+        <span class="post-comments">
+            &nbsp;|&nbsp; 
+            &{'comments'}(${_blog.comments.size()})
+            #{if _blog.comments}
+                , &{'latest_by'} <a href="@{UserAdmin.index(_blog.comments[-1].author.id)}">@${_blog.comments[-1].author}</a>
+            #{/if}
+        </span>
+    #{/if}
+</div>
+
+#{if _as != 'teaser'}
+    <div class="blog-content">
+        <div class="about">Detail: </div>
+        #{if _as == 'home_full' || _as == 'guest_full' }
+        ${_blog.content.nl2br()}
+        #{/if}
+        #{else}
+        ${_blog.content.length() > 200 ? _blog.content[0..200] + "..." : _blog.content.nl2br()}
+       	#{/else}
+    </div>
+#{/if}
+</div>
+
+#{if _as == 'home_full' || _as == 'guest_full'}
+<div class="comments">
+    <h3>
+        ${_blog.comments.size() ?: 'no'}
+        comment${_blog.comments.size().pluralize()}
+    </h3>
+
+    #{list items:_blog.comments, as:'comment'}
+        <div class="comment">
+            <div class="comment-metadata">
+                <span class="comment-author">by <a href="@{UserAdmin.index(comment.author.id)}">${comment.author}</a>,</span>
+                <span class="comment-date">
+                    ${comment.comment_date.format('dd MMM yy')}
+                </span>
+            </div>
+            <div class="comment-content">
+                <div class="about">Detail: </div>
+                ${comment.content.escape().nl2br()}
+            </div>
+        </div>
+    #{/list}
+
+</div>
+#{/if}

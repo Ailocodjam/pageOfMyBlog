@@ -1,0 +1,35 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+
+wrong_code=天啊，这样的验证码你都能输错！
+createNewBlog=发表博客
+reprint_blog=转载
+modify_blog=修改
+delete_blog=删除
+commentInfo=评论内容不能没有喔！
+
+
+comments_admin=评论管理
+edit_info=编辑我的信息
+
+blog_title=标题（必填）
+blog_content=内容（必填）
+
+home=首页
+regist=注册
+log_out=退出
+log_in=登录
+
+follow=关注
+unfollow=取消关注
+
+total_blogs=博客
+followings=关注
+followers=粉丝
+
+release_date=发布于：
+comments=评论
+latest_by=最新评论
+
+delete_blog_succ=成功删除博客 

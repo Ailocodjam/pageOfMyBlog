@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta charset="${_response_encoding}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        #{get 'moreStyles' /}
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script scr="@{'/public/javascripts/jquery.tools-1.2.5.toolbox.expose.min.js'}"></script>
+        
+        <script type="text/javascript" charset="utf-8">
+   		 $(function() {         
+        // Expose the form 
+        $('form').click(function() { 
+            $('form').expose({api: true}).load(); 
+        }); 
+        
+        // If there is an error, focus to form
+        if($('form .error').size()) {
+            $('form').expose({api: true, loadSpeed: 0}).load(); 
+            $('form input[type=text]').get(0).focus();
+        }
+    });
+</script>
+        #{get 'moreScripts' /}
+    </head>
+    <body>
+        
+        <div id="header">
+            <div id="logo">
+                Blog
+            </div>
+            <ul id="tools">
+            <li>
+            <span id="regist"><a href="#">&{'regist'}</a></span>
+              </li>  
+                <li>
+                
+                <div id="wel_info">
+                    #{if session.contains('username')}
+	                Hi,
+	               <a href="@{UserAdmin.homeIndex()}">
+                    ${session.get('username')}
+	               </a>
+                    <span id="log_in_out">
+                    <a href="@{Secure.logout()}">&{'log_out'}</a>
+                    </span>
+                    #{/if}
+                </div>
+                <div id="log_in_out">
+                    #{else}
+                    <a href="@{Secure.login()}">&{'log_in'}</a>
+                    #{/else}
+                </div>
+                </li>
+            </ul>
+            <div id="title">
+                <span class="about">About this blog</span>
+                <h1><a href="@{Application.index()}">${blogTitle}</a></h1>
+                <h2>${blogBaseline}</h2>
+            </div>
+        </div>
+        
+        <div id="main">
+            #{doLayout /} 
+        </div>
+        
+        <p id="footer">
+           ©2013 &nbsp;&nbsp; <a href="#">Wahson Leung</a>  
+        </p>
+        
+    </body>
+</html>

@@ -1,0 +1,21 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{if blogs.size()}
+
+    <div class="older-posts">
+        <h3>Blogs <span class="from">from this blog</span></h3>
+
+        #{list items:blogs, as:'oldPost'}
+            #{display blog:oldPost, as:'shortcut' /}
+        #{/list}
+    </div>
+#{/if}
+
+
+#{else}
+<div class="empty">
+    There is currently nothing to read here.
+</div>
+#{/else}
+ 

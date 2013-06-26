@@ -1,0 +1,16 @@
+package controllers;
+
+import play.mvc.Controller;
+import play.mvc.With;
+
+/**
+ * @author Wahson Leung
+ * @version 2013-4-8 下午11:36:26
+ * 
+ */
+
+@With(Secure.class)
+@Check("admin")
+public class Admin extends Controller {
+	
+}

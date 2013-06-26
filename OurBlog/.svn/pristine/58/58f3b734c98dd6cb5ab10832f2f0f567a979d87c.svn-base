@@ -1,0 +1,103 @@
+# you describe your data using the YAML notation here
+# and then load them using Fixtures.load("data.yml")
+
+User(kaka):
+   user_name: kaka
+   user_password: secret
+User(messy):
+   user_name: messy
+   user_password: secret
+User(CR):
+   user_name: CR
+   user_password: secret
+User(wahson):
+   user_name: Wahson
+   user_password: secret
+User(funny):
+   user_name: Funny
+   user_password: secret
+
+Blog(b1):
+    author: kaka
+    type: nature
+    title: 1st blog
+    content: You can start right now to hack your application using any text editor. 
+             Any changes will be automatically realoaded at the next page refresh, 
+             including modifications made to Java sources files.
+    release_date: 2013-03-07
+Blog(b2):
+    author: kaka
+    type: nature
+    title: 2nd blog
+    content: You can start right now to hack your application using any text editor. 
+             Any changes will be automatically realoaded at the next page refresh, 
+             including modifications made to Java sources files.
+    release_date: 2013-04-01
+Blog(b3):
+    author: messy
+    type: nature
+    title: 3rd blog
+    content: You can start right now to hack your application using any text editor. 
+             Any changes will be automatically realoaded at the next page refresh, 
+             including modifications made to Java sources files.
+    release_date: 2013-04-09       
+Blog(b4):
+    author: kaka
+    type: nature
+    title: 4st blog
+    content: You can start right now to hack your application using any text editor. 
+             Any changes will be automatically realoaded at the next page refresh, 
+             including modifications made to Java sources files.
+    release_date: 2013-04-02
+Blog(b5):
+    author: wahson
+    type: reprint
+    title: 4st blog
+    content: You can start right now to hack your application using any text editor. 
+             Any changes will be automatically realoaded at the next page refresh, 
+             including modifications made to Java sources files.
+    release_date: 2013-04-14 
+Blog(b6):
+    author: wahson
+    type: nature
+    title: new blog
+    content: You can start right now to hack your application using any text editor. 
+             Any changes will be automatically realoaded at the next page refresh, 
+             including modifications made to Java sources files.
+    release_date: 2013-04-10
+    
+Comment(c1):
+    blog: b1
+    author: funny 
+    content: You can quickly set up  
+    comment_date: 2013-05-01
+Comment(c2):
+    blog: b1
+    author: CR 
+    content: You can quickly set up  
+    comment_date: 2013-05-02
+Comment(c3):
+    blog: b1
+    author: kaka 
+    content: You can quickly set up  
+    comment_date: 2013-05-03
+Comment(c4):
+    blog: b1
+    author: CR 
+    content: You can quickly set up  
+    comment_date: 2013-05-02    
+Comment(c5):
+    blog: b5
+    author: CR 
+    content: You can quickly set up1  
+    comment_date: 2013-04-14
+Comment(c6):
+    blog: b5
+    author: kaka 
+    content: You can quickly set up2  
+    comment_date: 2013-04-14 
+Comment(c7):
+    blog: b6
+    author: kaka 
+    content: You can quickly set up3  
+    comment_date: 2013-04-15             

@@ -1,0 +1,94 @@
+14 四月 2013 15:28:37,477 INFO  ~ Starting E:\百度云\Workspaces\play\OurBlog\.
+14 四月 2013 15:28:37,480 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.secure)
+14 四月 2013 15:28:37,480 INFO  ~ Module secure is available (E:\Java\soft\play framework\play-1.2.4\modules\secure)
+14 四月 2013 15:28:37,480 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.crud)
+14 四月 2013 15:28:37,481 INFO  ~ Module crud is available (E:\Java\soft\play framework\play-1.2.4\modules\crud)
+14 四月 2013 15:28:37,984 WARN  ~ You're running Play! in DEV mode
+14 四月 2013 15:28:40,107 INFO  ~ Connected to jdbc:mysql://localhost/blog?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+14 四月 2013 15:28:41,843 ERROR ~ Unsuccessful: create table blog.tb_user (id bigint not null auto_increment, head_protrait longblob, isAdmin bit not null, user_name varchar(255), user_password varchar(255), primary key (id))
+14 四月 2013 15:28:41,843 ERROR ~ Table 'tb_user' already exists
+14 四月 2013 15:28:42,514 INFO  ~ Application 'OurBlog' is now started !
+14 四月 2013 15:28:43,267 DEBUG ~ insert into blog.tb_user (head_protrait, isAdmin, user_name, user_password) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,297 DEBUG ~ insert into blog.tb_user (head_protrait, isAdmin, user_name, user_password) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,304 DEBUG ~ insert into blog.tb_user (head_protrait, isAdmin, user_name, user_password) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,314 DEBUG ~ insert into blog.tb_user (head_protrait, isAdmin, user_name, user_password) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,321 DEBUG ~ insert into blog.tb_user (head_protrait, isAdmin, user_name, user_password) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,336 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,350 DEBUG ~ insert into blog.tb_blog (user_id, blog_from, content, release_date, title, type) values (?, ?, ?, ?, ?, ?)
+14 四月 2013 15:28:43,364 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,368 DEBUG ~ insert into blog.tb_blog (user_id, blog_from, content, release_date, title, type) values (?, ?, ?, ?, ?, ?)
+14 四月 2013 15:28:43,375 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,380 DEBUG ~ insert into blog.tb_blog (user_id, blog_from, content, release_date, title, type) values (?, ?, ?, ?, ?, ?)
+14 四月 2013 15:28:43,385 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,390 DEBUG ~ insert into blog.tb_blog (user_id, blog_from, content, release_date, title, type) values (?, ?, ?, ?, ?, ?)
+14 四月 2013 15:28:43,395 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,399 DEBUG ~ insert into blog.tb_blog (user_id, blog_from, content, release_date, title, type) values (?, ?, ?, ?, ?, ?)
+14 四月 2013 15:28:43,405 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,409 DEBUG ~ insert into blog.tb_blog (user_id, blog_from, content, release_date, title, type) values (?, ?, ?, ?, ?, ?)
+14 四月 2013 15:28:43,418 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,427 DEBUG ~ select blog0_.id as id1_, blog0_.user_id as user7_1_, blog0_.blog_from as blog2_1_, blog0_.content as content1_, blog0_.release_date as release4_1_, blog0_.title as title1_, blog0_.type as type1_ from blog.tb_blog blog0_ where blog0_.id=? limit ?
+14 四月 2013 15:28:43,433 DEBUG ~ insert into blog.tb_comment (user_id, blog_id, comment_date, content) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,438 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,443 DEBUG ~ select blog0_.id as id1_, blog0_.user_id as user7_1_, blog0_.blog_from as blog2_1_, blog0_.content as content1_, blog0_.release_date as release4_1_, blog0_.title as title1_, blog0_.type as type1_ from blog.tb_blog blog0_ where blog0_.id=? limit ?
+14 四月 2013 15:28:43,446 DEBUG ~ insert into blog.tb_comment (user_id, blog_id, comment_date, content) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,450 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,454 DEBUG ~ select blog0_.id as id1_, blog0_.user_id as user7_1_, blog0_.blog_from as blog2_1_, blog0_.content as content1_, blog0_.release_date as release4_1_, blog0_.title as title1_, blog0_.type as type1_ from blog.tb_blog blog0_ where blog0_.id=? limit ?
+14 四月 2013 15:28:43,457 DEBUG ~ insert into blog.tb_comment (user_id, blog_id, comment_date, content) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,461 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,465 DEBUG ~ select blog0_.id as id1_, blog0_.user_id as user7_1_, blog0_.blog_from as blog2_1_, blog0_.content as content1_, blog0_.release_date as release4_1_, blog0_.title as title1_, blog0_.type as type1_ from blog.tb_blog blog0_ where blog0_.id=? limit ?
+14 四月 2013 15:28:43,468 DEBUG ~ insert into blog.tb_comment (user_id, blog_id, comment_date, content) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,472 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,476 DEBUG ~ select blog0_.id as id1_, blog0_.user_id as user7_1_, blog0_.blog_from as blog2_1_, blog0_.content as content1_, blog0_.release_date as release4_1_, blog0_.title as title1_, blog0_.type as type1_ from blog.tb_blog blog0_ where blog0_.id=? limit ?
+14 四月 2013 15:28:43,478 DEBUG ~ insert into blog.tb_comment (user_id, blog_id, comment_date, content) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,483 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,486 DEBUG ~ select blog0_.id as id1_, blog0_.user_id as user7_1_, blog0_.blog_from as blog2_1_, blog0_.content as content1_, blog0_.release_date as release4_1_, blog0_.title as title1_, blog0_.type as type1_ from blog.tb_blog blog0_ where blog0_.id=? limit ?
+14 四月 2013 15:28:43,489 DEBUG ~ insert into blog.tb_comment (user_id, blog_id, comment_date, content) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,493 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,497 DEBUG ~ select blog0_.id as id1_, blog0_.user_id as user7_1_, blog0_.blog_from as blog2_1_, blog0_.content as content1_, blog0_.release_date as release4_1_, blog0_.title as title1_, blog0_.type as type1_ from blog.tb_blog blog0_ where blog0_.id=? limit ?
+14 四月 2013 15:28:43,499 DEBUG ~ insert into blog.tb_comment (user_id, blog_id, comment_date, content) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,839 DEBUG ~ insert into blog.tb_user (head_protrait, isAdmin, user_name, user_password) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,845 DEBUG ~ insert into blog.tb_user (head_protrait, isAdmin, user_name, user_password) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,852 DEBUG ~ insert into blog.tb_user (head_protrait, isAdmin, user_name, user_password) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,858 DEBUG ~ insert into blog.tb_user (head_protrait, isAdmin, user_name, user_password) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,863 DEBUG ~ insert into blog.tb_user (head_protrait, isAdmin, user_name, user_password) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,868 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,872 DEBUG ~ insert into blog.tb_blog (user_id, blog_from, content, release_date, title, type) values (?, ?, ?, ?, ?, ?)
+14 四月 2013 15:28:43,876 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,881 DEBUG ~ insert into blog.tb_blog (user_id, blog_from, content, release_date, title, type) values (?, ?, ?, ?, ?, ?)
+14 四月 2013 15:28:43,885 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,890 DEBUG ~ insert into blog.tb_blog (user_id, blog_from, content, release_date, title, type) values (?, ?, ?, ?, ?, ?)
+14 四月 2013 15:28:43,895 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,898 DEBUG ~ insert into blog.tb_blog (user_id, blog_from, content, release_date, title, type) values (?, ?, ?, ?, ?, ?)
+14 四月 2013 15:28:43,904 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,907 DEBUG ~ insert into blog.tb_blog (user_id, blog_from, content, release_date, title, type) values (?, ?, ?, ?, ?, ?)
+14 四月 2013 15:28:43,913 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,917 DEBUG ~ insert into blog.tb_blog (user_id, blog_from, content, release_date, title, type) values (?, ?, ?, ?, ?, ?)
+14 四月 2013 15:28:43,922 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,925 DEBUG ~ select blog0_.id as id1_, blog0_.user_id as user7_1_, blog0_.blog_from as blog2_1_, blog0_.content as content1_, blog0_.release_date as release4_1_, blog0_.title as title1_, blog0_.type as type1_ from blog.tb_blog blog0_ where blog0_.id=? limit ?
+14 四月 2013 15:28:43,928 DEBUG ~ insert into blog.tb_comment (user_id, blog_id, comment_date, content) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,933 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,936 DEBUG ~ select blog0_.id as id1_, blog0_.user_id as user7_1_, blog0_.blog_from as blog2_1_, blog0_.content as content1_, blog0_.release_date as release4_1_, blog0_.title as title1_, blog0_.type as type1_ from blog.tb_blog blog0_ where blog0_.id=? limit ?
+14 四月 2013 15:28:43,939 DEBUG ~ insert into blog.tb_comment (user_id, blog_id, comment_date, content) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,944 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,947 DEBUG ~ select blog0_.id as id1_, blog0_.user_id as user7_1_, blog0_.blog_from as blog2_1_, blog0_.content as content1_, blog0_.release_date as release4_1_, blog0_.title as title1_, blog0_.type as type1_ from blog.tb_blog blog0_ where blog0_.id=? limit ?
+14 四月 2013 15:28:43,950 DEBUG ~ insert into blog.tb_comment (user_id, blog_id, comment_date, content) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,955 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,957 DEBUG ~ select blog0_.id as id1_, blog0_.user_id as user7_1_, blog0_.blog_from as blog2_1_, blog0_.content as content1_, blog0_.release_date as release4_1_, blog0_.title as title1_, blog0_.type as type1_ from blog.tb_blog blog0_ where blog0_.id=? limit ?
+14 四月 2013 15:28:43,960 DEBUG ~ insert into blog.tb_comment (user_id, blog_id, comment_date, content) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,964 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,967 DEBUG ~ select blog0_.id as id1_, blog0_.user_id as user7_1_, blog0_.blog_from as blog2_1_, blog0_.content as content1_, blog0_.release_date as release4_1_, blog0_.title as title1_, blog0_.type as type1_ from blog.tb_blog blog0_ where blog0_.id=? limit ?
+14 四月 2013 15:28:43,969 DEBUG ~ insert into blog.tb_comment (user_id, blog_id, comment_date, content) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,974 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,978 DEBUG ~ select blog0_.id as id1_, blog0_.user_id as user7_1_, blog0_.blog_from as blog2_1_, blog0_.content as content1_, blog0_.release_date as release4_1_, blog0_.title as title1_, blog0_.type as type1_ from blog.tb_blog blog0_ where blog0_.id=? limit ?
+14 四月 2013 15:28:43,980 DEBUG ~ insert into blog.tb_comment (user_id, blog_id, comment_date, content) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,985 DEBUG ~ select user0_.id as id2_, user0_.head_protrait as head2_2_, user0_.isAdmin as isAdmin2_, user0_.user_name as user4_2_, user0_.user_password as user5_2_ from blog.tb_user user0_ where user0_.id=? limit ?
+14 四月 2013 15:28:43,988 DEBUG ~ select blog0_.id as id1_, blog0_.user_id as user7_1_, blog0_.blog_from as blog2_1_, blog0_.content as content1_, blog0_.release_date as release4_1_, blog0_.title as title1_, blog0_.type as type1_ from blog.tb_blog blog0_ where blog0_.id=? limit ?
+14 四月 2013 15:28:43,990 DEBUG ~ insert into blog.tb_comment (user_id, blog_id, comment_date, content) values (?, ?, ?, ?)
+14 四月 2013 15:28:43,996 DEBUG ~ select count(*) as col_0_0_ from blog.tb_comment comment0_ limit ?
+14 四月 2013 15:28:44,006 DEBUG ~ delete from blog.tb_comment where id=?
+14 四月 2013 15:28:44,010 DEBUG ~ select comment0_.id as id0_, comment0_.user_id as user4_0_, comment0_.blog_id as blog5_0_, comment0_.comment_date as comment2_0_, comment0_.content as content0_ from blog.tb_comment comment0_
+14 四月 2013 15:28:44,023 DEBUG ~ select user0_.id as id2_0_, user0_.head_protrait as head2_2_0_, user0_.isAdmin as isAdmin2_0_, user0_.user_name as user4_2_0_, user0_.user_password as user5_2_0_ from blog.tb_user user0_ where user0_.id=?
+14 四月 2013 15:28:44,032 DEBUG ~ select blog0_.id as id1_1_, blog0_.user_id as user7_1_1_, blog0_.blog_from as blog2_1_1_, blog0_.content as content1_1_, blog0_.release_date as release4_1_1_, blog0_.title as title1_1_, blog0_.type as type1_1_, user1_.id as id2_0_, user1_.head_protrait as head2_2_0_, user1_.isAdmin as isAdmin2_0_, user1_.user_name as user4_2_0_, user1_.user_password as user5_2_0_ from blog.tb_blog blog0_ left outer join blog.tb_user user1_ on blog0_.user_id=user1_.id where blog0_.id=?
+14 四月 2013 15:28:44,034 DEBUG ~ select user0_.id as id2_0_, user0_.head_protrait as head2_2_0_, user0_.isAdmin as isAdmin2_0_, user0_.user_name as user4_2_0_, user0_.user_password as user5_2_0_ from blog.tb_user user0_ where user0_.id=?
+14 四月 2013 15:28:44,035 DEBUG ~ select blog0_.id as id1_1_, blog0_.user_id as user7_1_1_, blog0_.blog_from as blog2_1_1_, blog0_.content as content1_1_, blog0_.release_date as release4_1_1_, blog0_.title as title1_1_, blog0_.type as type1_1_, user1_.id as id2_0_, user1_.head_protrait as head2_2_0_, user1_.isAdmin as isAdmin2_0_, user1_.user_name as user4_2_0_, user1_.user_password as user5_2_0_ from blog.tb_blog blog0_ left outer join blog.tb_user user1_ on blog0_.user_id=user1_.id where blog0_.id=?
+14 四月 2013 15:28:44,038 DEBUG ~ select blog0_.id as id1_1_, blog0_.user_id as user7_1_1_, blog0_.blog_from as blog2_1_1_, blog0_.content as content1_1_, blog0_.release_date as release4_1_1_, blog0_.title as title1_1_, blog0_.type as type1_1_, user1_.id as id2_0_, user1_.head_protrait as head2_2_0_, user1_.isAdmin as isAdmin2_0_, user1_.user_name as user4_2_0_, user1_.user_password as user5_2_0_ from blog.tb_blog blog0_ left outer join blog.tb_user user1_ on blog0_.user_id=user1_.id where blog0_.id=?

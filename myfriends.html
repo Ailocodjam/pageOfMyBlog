@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/myblog.css">
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/myblog.js"></script>
+	<title>myBlog!</title>
+</head>
+<script type="text/javascript">
+    
+</script>
+<body>
+	<div id="">
+		<ul class="btn-panel">
+			<li title="返回首页">
+				<a href="#" class="icon btn-home"></a>		
+			</li>
+		</ul>
+	</div>
+	<div id="jspContainer">
+		<div class="jspPane">
+			<div id="column">
+				<div id="header" class="border">
+					<div class="mast">
+						<div id="title">
+							<h1><a href="#">GM_lv</a></h1>						
+						</div>
+						<div id="nav">
+							<form id="searchform" action="#" method="get">
+								<input type="text" id="q" name="q" value="搜索" onblur="if(this.value=''){this.value = "搜索";}" onfocus="if(this.value == '搜索') {this.value=‘’;}" />
+							</form>
+							<ul>
+								<li class="one">
+									<a href="#">
+										<span class="tip" >
+											<span class="about">关于</span>
+										</span>									
+									</a>								
+								</li>		
+								<li class="two">
+									<a href="#">
+										<span class="tip">
+											<span class="friend">好友</span>
+										</span>									
+									</a>								
+								</li>		
+								<li class="three">
+									<a href="#">
+										<span class="tip">
+											<span class="article">文章</span>
+										</span>									
+									</a>								
+								</li>		
+								<li class="four">
+									<a href="#">
+										<span class="tip">
+											<span class="sixin">私信</span>
+										</span>									
+									</a>								
+								</li>				
+										
+							</ul>
+						</div>
+					</div>
+					
+					<div id="profile" class="open" style="display:none;">
+						<div class="portrait">
+							<img alt="GM_LV" src="images/lgm.jpg" />												
+						</div>
+						<div id="about">
+							<h3>关于</h3>
+							<p class="description">华南农业大学</p>						
+						</div>
+						<ul class="personal">
+							<li><a href="#">粉丝(20)</a></li>
+							<li><a href="#">关注(20)</a></li>
+							<li><a href="#">博文(10)</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- header -->
+				
+				<div id="content" class="border rich-content clearfix">
+					<div id="following-header">
+						<div id="followingMenu">
+							<a href="#" class="active">我关注的博客</a> 
+							<span>|</span>
+							<a href="#">关注我的好友</a>
+							<span>|</span>
+							<a href="#">搜索好友</a>  
+						</div>
+					</div>
+					<div class="friend-list">
+						<ul id="f-list">
+							<li class="clearfix">
+								<a target="_blank" href="#" class="pic" style="background:url(images/pic.jpg) no-repeat;"></a>
+								<div class="blog-name">
+									<a href="#" class="f-name">梁华生</a>
+								</div>
+								<a class="cancel-follow">取消关注</a>							
+							</li>			
+							<li class="clearfix">
+								<a target="_blank" href="#" class="pic" style="background:url(images/pic.jpg) no-repeat;"></a>
+								<div class="blog-name">
+									<a href="#" class="f-name">小区</a>
+								</div>
+								<a class="cancel-follow">取消关注</a>							
+							</li>						
+						</ul>
+					</div>
+				</div>		
+				<!--content-->	
+				
+				<div id="footer" class="border">				
+					<div class="node">
+						<h3>关于</h3>
+						<p class="description"></p>				
+					</div>
+					<div class="node">
+						<h3>导航</h3>
+						<ul>
+							<li><a href="#">好友动态</a></li>
+							<li><a href="#">个人动态</a></li>
+							<li><a href="#">发布博文</a></li>						
+						</ul>					
+					</div>
+					<div class="node">
+						<h3>页面</h3>
+						<ul>
+							<li><a href="#">首页</a></li>
+						</ul>			
+					</div>
+					<div class="node last">
+						<h3>页面</h3>
+						<ul>
+							<li><a href="#">@GM_lv </a></li>  
+							<li><a href="#">@梁华生 </a></li>
+							<li><a href="#">@小区 </a></li>
+							<li><a href="#">@建雄 </a></li>
+						</ul>			
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+</body>
+</html>

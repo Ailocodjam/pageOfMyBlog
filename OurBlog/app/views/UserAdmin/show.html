@@ -1,0 +1,59 @@
+#{extends 'userAdmin.html' /}
+#{set title:'home' /}
+#{displayme user:user,as:mode/}
+
+#{if flash.success}
+    <p class="success">${flash.success}</p>
+#{/if}
+
+#{display blog:blog, as:mode /}
+
+<h3>Post a comment</h3>
+ 
+#{form @UserAdmin.blogComment(blog.id)}
+ 
+    #{ifErrors}
+        <p class="error">
+            ${errors[0]}
+        </p>
+    #{/ifErrors}
+ 
+    <p>
+        <label for="author">Your name: </label>
+        <input type="text" name="author" id="author" 
+        value="${session.get('username') != null ? session.get('username') : 'Not logged in!'}" 
+        readonly="readonly"/>
+    </p>
+    <p>
+        <label for="content">Your message: </label>
+        <textarea name="content" id="content">${params.content}</textarea>
+    </p>
+	 <p>
+    	<label for="code">Please type the code below:</label>
+    	<img  src="@{UserAdmin.captcha(randomId)}"/><br/>
+    	<input type="text" name="code" id="code" size="18" value=""/>
+    	<input type="hidden" name="randomId" value="${randomId}"/>
+    	
+    </p>
+    <p>
+        <input type="submit" value="Submit your comment" />
+    </p>
+#{/form}
+<h4>
+<ul id="pagination">
+    #{if blog.previous()}
+        <li id="previous">
+            <a href="@{UserAdmin.show(blog.previous().id)}">
+                ${blog.previous().title}
+            </a>
+        </li>
+    #{/if}
+    #{if blog.next()}
+        <li id="next">
+            <a href="@{UserAdmin.show(blog.next().id)}">
+                ${blog.next().title}
+            </a>
+        </li>
+    #{/if}
+</ul>
+</h4>
